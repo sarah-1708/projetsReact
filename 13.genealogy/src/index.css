@@ -21,6 +21,7 @@ body{
 }
 .flex{
   display:flex;
+
 }
 nav{
   min-width:100%;
@@ -29,6 +30,10 @@ nav{
 overflow: auto;
   
 
+}
+
+.logo {
+  background-image: url(./assets/tree.png);
 }
 
 h1{

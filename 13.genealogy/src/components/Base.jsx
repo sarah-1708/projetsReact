@@ -63,7 +63,7 @@ export default function Base() {
 
 function Mariage(){
     return(
-        <div className="center" >
+        <div  >
             <h2>⚭</h2>
             <div>
             <label htmlFor="">le : </label>
