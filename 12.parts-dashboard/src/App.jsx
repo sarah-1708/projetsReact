@@ -4,7 +4,8 @@ import SidebarDashboard from "./components/Dashboard/SidebarDashboard"
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import DisplayedTool from "./components/Tools/DisplayedTool"
-import SidebarTools from "./components/Tools/SidebarTools";
+import SidebarTeachers from "./components/TeacherForm/SidebarTeachers";
+import DisplayedTeacher from "./components/TeacherForm/DisplayedTeacher";
 
 function App() {
    
@@ -20,7 +21,7 @@ function App() {
     <BrowserRouter>
  
      {/*<SidebarDashboard/>*/}
-     <SidebarTools/>
+     <DisplayedTeacher/>
 
 
       <Routes>
