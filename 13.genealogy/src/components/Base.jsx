@@ -1,14 +1,14 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function Base() {
   const [showComponent, setShowComponent] = useState(false);
 
   return (
-    <div className="home">
-     
+
+     <div >
         <div className="group">
-      <div className={showComponent ? "card":"added"}>
+      <div className={showComponent ? "added":"card"}>
         
         <div>
           <label>Nom : </label>
@@ -37,24 +37,45 @@ export default function Base() {
             <label>Lieu de décès : </label>
             <input className="margin" type="text" />
           </div>
+          </div>
+          <div>
+          <label>Profession : </label>
+          <input className="margin" type="text" />
         </div>
+          <button className= {showComponent ? "round":"round"} onClick={() => setShowComponent(true)}> + </button>
+        
       </div>
-      <div className={showComponent ? "round":"roundadded"}>
-        <button onClick={() => setShowComponent(true)}> + </button>
-      </div>
+      
+        
+      
       </div>
       
       {showComponent && (
-        <div>
+        <div className="flex">
           <Base />
+          <Mariage/>
           <Base />
         </div>
       )}
-    </div>
-    
+      </div>
   );
 }
 
+function Mariage(){
+    return(
+        <div className="center" >
+            <h2>⚭</h2>
+            <div>
+            <label htmlFor="">le : </label>
+            <input className="margin" type="date" />
+            </div>
+            <div>
+            <label htmlFor="">à : </label>
+            <input className="margin"  type="text" />
+            </div>
+        </div>
+    )
+}
 
 
 

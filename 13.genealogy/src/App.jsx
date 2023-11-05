@@ -1,6 +1,6 @@
 
 import Header from "./components/header"
-import Base from "./components/base"
+import Home from "./pages/Home"
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Header/>
-   <Base/>
+   <Home/>
      </>
   )
 }
